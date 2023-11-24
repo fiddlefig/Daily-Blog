@@ -1,0 +1,218 @@
+/* blog template
+<div class="blog-box">
+    <span class="blog-title">title<span class="date">date</span></span>
+     <div class="blog-entry">text
+    </div>
+</div>
+*/
+
+body {
+    background-color: hsl(288, 95%, 15%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+
+
+.header {
+    border-style: solid;
+    border-radius: 50px;
+    padding: 25px;
+    display: flex;
+    width: 96%;
+    justify-content: space-around;
+}
+.header p {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+
+.logo {
+    width: 25px;
+    padding: 5px 5px;
+    margin: 15px;
+    
+}
+.s {
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+
+
+.blog-box {
+    width: 65%;
+    border-image: linear-gradient(to right, red, blue) 30;
+    border-style: solid;
+    border-width: 3px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.blog-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+.blog-entry {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px;
+}
+.blog-img { /*do not mess with*/
+    width: 450px;
+    margin: auto;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.blog-img2 img{
+    width: 400px;
+}
+.img2 {
+    margin-left: 13%;
+    border-radius: 10px;
+}
+.img1 {
+    margin-left: 17%;
+    border-radius: 10px;
+}
+
+
+.bio-entry {
+    width: 65%;
+    border-image: linear-gradient(to right, red, blue) 30;
+    border-style: solid;
+    border-width: 3px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+.bio-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portal {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    font-size: 30px;
+    
+}
+.portal a {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    margin: 20px;
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px 10px;
+    border-image: linear-gradient(to right, red, blue) 3;
+}
+
+
+.date {
+    font-size: 15px;
+    color: green;
+    margin-left: 20px;
+    
+}
+
+
+footer {
+    text-align: center;
+    font-size: 15px;
+}
+.code-text {
+    color: green;
+}
+
+
+                            /* card css */
+.card {
+    width: 1300px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(28, 28, 28);
+    color: orange;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.card-pic img{
+    width: 550px;
+    border-radius: 20px;
+    margin-left: 15px;
+    object-fit: cover;
+    
+    
+    
+}
+.card-text { /* text container*/
+    width: 49%;
+    /*background-color: ;*/
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    
+} 
+.card-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: orange;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgb(141, 94, 7);
+}
+.card-dis {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;   
+}
+.time-played {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.hours {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
