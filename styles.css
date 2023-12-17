@@ -7,10 +7,12 @@
 */
 
 body {
-    background-color: hsl(288, 95%, 15%);
+    /* background-color: hsl(288, 95%, 15%); */
+    background-color: rgb(46, 50, 53);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin: 50px;
+    padding: 0;
+    margin: 0;
 }
 .container {
     display: flex;
@@ -25,21 +27,22 @@ a {
 
 
 .header {
-    border-style: solid;
-    border-radius: 50px;
-    padding: 25px;
     display: flex;
-    width: 96%;
     justify-content: space-around;
+    /* border: 3px solid;
+    border-radius: 50px; */
+    
+    background-color: #202325;
 }
 .header p {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    
     font-size: 20px;
 }
 h1 {
     font-size: 50px;
+    
 }
 
 .logo {
@@ -60,12 +63,11 @@ h1 {
 
 .blog-box {
     width: 65%;
-    border-image: linear-gradient(to right, red, blue) 30;
-    border-style: solid;
-    border-width: 3px;
+    border: 3px solid purple;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    background-color: #5a6167;
 }
 .blog-title {
     font-size: 35px;
@@ -101,7 +103,7 @@ h1 {
 .bio-entry {
     width: 65%;
     border-image: linear-gradient(to right, red, blue) 30;
-    border-style: solid;
+    border: 2px solid;
     border-width: 3px;
     margin: auto;
     padding: 20px;
@@ -135,18 +137,18 @@ h1 {
     color: white;
 }
 
+
 .links {
     margin: 20px;
-    border-style: solid;
-    border-width: 3px;
+    border-bottom: 3px solid purple;
     padding: 5px 10px;
-    border-image: linear-gradient(to right, red, blue) 3;
+    transition: width 2s;
+    
 }
-
 
 .date {
     font-size: 15px;
-    color: green;
+    color: black;
     margin-left: 20px;
     
 }
@@ -157,62 +159,49 @@ footer {
     font-size: 15px;
 }
 .code-text {
-    color: green;
+    color: black;
 }
 
 
                             /* card css */
-.card {
-    width: 1300px;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: rgb(28, 28, 28);
-    color: orange;
-    border-radius: 20px;
-    margin-top: 50px;
-}
-.card-pic img{
-    width: 550px;
-    border-radius: 20px;
-    margin-left: 15px;
-    object-fit: cover;
+
+
+@media (max-width: 390px) {
+    .header {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: auto;
+    }
+    #header2 {
+        font-size: 25px;
+    }
+    .header p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .portal {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container {
+        margin: -50px;
+    }
+
+    .blog-box {
+        width: auto;
+        border: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-img {
+        width: 300px;
+    }
     
-    
-    
-}
-.card-text { /* text container*/
-    width: 49%;
-    /*background-color: ;*/
-    height: 99%;
-    display: flex;
-    flex-direction: column;
-    
-} 
-.card-title {
-    font-size: 60px;
-    font-weight: bold;
-    color: orange;
-    padding: 30px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    text-shadow: 2px 2px 5px rgb(141, 94, 7);
-}
-.card-dis {
-    font-size: 30px;
-    padding: 20px;
-    text-align: center;   
-}
-.time-played {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 100px;
-    font-weight: bold;
-}
-.hours {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 50px;
 }

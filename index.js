@@ -1,7 +1,17 @@
-function colorChange () {
-    document.getElementById('color2').style.backgroundColor = "black";
-}
-function colorChange2 () {
-    document.getElementById('color').style.backgroundColor = "orange";
-}
+const colors = ['red', 'blue', 'green', 'pink', 'white', 'grey', 'orange']
 
+const blogWithBtn = document.getElementById('blogWithBtn');
+
+const btn = document.getElementById('btn');
+const btn2 = document.getElementById('btn2');
+
+btn.addEventListener('click', function() {
+    const randomColor = randomC();
+
+    document.getElementById('blogWithBtn').style.borderColor = colors[randomColor]
+})
+
+
+randomC = () => {
+    return Math.floor(Math.random() * colors.length)   
+}
